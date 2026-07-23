@@ -1,13 +1,13 @@
 # Makefile 
 all: prog
 prog: main.o temp_functions.o
-	gcc -o prog main.o temp_functions.o
+	gcc -o temp main.o temp_functions.o
 main.o: main.c temp_functions.h
 	gcc -c -o main.o main.c
-temp_functions.o: temp_functions.c
+temp_funtections.o: temp_functions.c
 	gcc -c -o temp_functions.o temp_functions.c
 clean:
-	make	rm -rf *.o prog
+	make	rm -rf *.o temp
 
 #all:
 #	gcc -o tmp_app main.c
